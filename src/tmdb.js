@@ -14,7 +14,7 @@ export default {
             {
                 slug: 'originals',
                 title: 'Originais do Netflix',
-                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&page=3&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'trending',
@@ -44,7 +44,7 @@ export default {
             {
                 slug: 'romance',
                 title: 'Romance',
-                items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&page=2&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'documentary',

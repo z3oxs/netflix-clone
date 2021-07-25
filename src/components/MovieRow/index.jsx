@@ -41,7 +41,7 @@ export default function MovieRow({ title, items }) {
                     {
                         items.results.length > 0 && items.results.map((i, k) => (
                             <div key={k} className="movieRow--item">
-                                <img src={`https://image.tmdb.org/t/p/w300${i.poster_path}`} alt={i.original_title} />
+                                <img src={i.poster_path !== null ? `https://image.tmdb.org/t/p/w300${i.poster_path}` : 'https://i.ibb.co/bPHcC1M/error.png'} alt={i.original_title} />
                             </div>
                         ))
                     }
