@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false && react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "winbuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "production": "serve -s build"
   },
